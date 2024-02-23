@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="displaybar">
+          <input id="numDisplay" />
+          <button onclick="clearButton()" id="clearBtn">C</button>
+        </div>
+
+        <div class="calcbody">
+          <div class="numButtons">
+            <button onclick="calcButton(7)">7</button>
+            <button onclick="calcButton(8)">8</button>
+            <button onclick="calcButton(9)">9</button>
+            <button onclick="calcButton(4)">4</button>
+            <button onclick="calcButton(5)">5</button>
+            <button onclick="calcButton(6)">6</button>
+            <button onclick="calcButton(1)">1</button>
+            <button onclick="calcButton(2)">2</button>
+            <button onclick="calcButton(3)">3</button>
+            <button onclick="calcButton(0)">0</button>
+            <button onclick="calcButton('.')">.</button>
+            <button onclick="solve()" id="equal">=</button>
+          </div>
+          <div class="operators">
+            <button onclick="calcOperator('+')">+</button>
+            <button onclick="calcOperator('-')">-</button>
+            <button onclick="calcOperator('*')">x</button>
+            <button onclick="calcOperator('/')">÷</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
